@@ -1,5 +1,9 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(0, 174, 255);}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #f1f1f1;
+}
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -8,9 +12,75 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-h1{
-    position: center;
+
+h2{
+  position: absolute;
+  left: 160px;
+  top: 30px;
 }
+  
+.loginBox{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 50%; 
+  margin-top: -100px; 
+  margin-left: -250px; 
+  width: 450px; 
+  height: 500px; 
+  background: rgb(255, 255, 255);
+  border: 8px black
+}
+
+.pictureBox{
+  display: flex;
+  width: 450px;
+  align-items: stretch;
+}
+
+.pictureBox > .welcome {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.verticalBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verticalBox > .account {
+  margin:20px;
+}
+
+.verticalBox > .or {
+  margin:20px;
+}
+
+.verticalBox > .login {
+  margin:20px;
+}
+
+.enterData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+}
+
+.enterData > .textField {
+  width: 300px;
+}
+
+.enterData > .passwordField {
+  width: 300px;
+}
+
 button {
   background-color: #377de7;
   color: white;
@@ -18,7 +88,8 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
+  
 }
 button:hover {
   opacity: 0.8;
@@ -38,17 +109,9 @@ img.avatar {
 }
 .container {
   padding: 16px;
+  background-color: white;
 }
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+
+p{
+  text-align: center;
 }
