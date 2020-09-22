@@ -8,6 +8,9 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+h1{
+    position: center;
+}
 button {
   background-color: #377de7;
   color: white;
@@ -40,7 +43,6 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
      display: block;
