@@ -1,4 +1,4 @@
-body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(0, 174, 255);}
+body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(0, 125, 184);}
 form {
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@ h2{
 }
 
 button {
-  background-color: #377de7;
+  background-color: #0a4194;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -114,4 +114,57 @@ img.avatar {
 
 p{
   text-align: center;
+}
+
+/* ---------------------INDEX.HTML-------------------- */
+
+.feedBox{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 50%; 
+  top: 0;
+  margin-left: -500px; 
+  width: 1000px; 
+  height: 100%; 
+  background: rgb(255, 255, 255);
+  border: 8px black
+}
+
+nav {
+  display: flex;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+nav div{
+  height: 60px;
+  flex-grow: 4;
+  padding: 20px;
+}
+
+nav div img {
+  height: 100%;
+}
+
+nav div
+
+.searchBox{
+  display: flex;
+  width: 450px;
+  align-items: stretch;
+  height: 100%;
+}
+
+.infoBox{
+  display: flex;
+  width: 700px;
+  align-items: stretch;
+  height: 800px;
+  box-shadow: -10px 20px 30px #888888;
+}
 }
