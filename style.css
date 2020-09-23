@@ -33,6 +33,10 @@ h2{
   border: 8px black
 }
 
+.enterData ~ input[type="text"] {
+    font-family: BreeSerif;
+}
+
 .pictureBox{
   display: flex;
   width: 450px;
@@ -40,11 +44,9 @@ h2{
 }
 
 .pictureBox > .welcome {
-  display: flex;
-  justify-content: flex-start;
-  margin: 30px;
+
+  margin: 40px;
   align-items: center;
-  text-align: center;
 }
 
 .verticalBox{
@@ -53,8 +55,33 @@ h2{
   align-items: center;
 }
 
+.login {
+  font-family: BreeSerif;
+  font-size: 24px;
+}
+
+.welcome {
+  font-family: BreeSerif;
+  font-size: 20px;
+}
+
+input ~ .textField {
+    font-family: BreeSerif;
+}
+
+.or {
+  font-family: BreeSerif;
+  font-size: 15px;
+}
+
+.account {
+  font-family: BreeSerif;
+  font-size: 19px;
+  color: blue;
+}
+
 .verticalBox > .account {
-  margin:20px;
+  margin:13px;
 }
 
 .verticalBox > .or {
@@ -62,7 +89,11 @@ h2{
 }
 
 .verticalBox > .login {
-  margin:20px;
+  margin:13px;
+}
+
+label + .or {
+  font-weight: bold;
 }
 
 .enterData{
@@ -88,7 +119,8 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 30%;
+  width: 100%;
+  font-family: BreeSerif;
   
 }
 button:hover {
@@ -114,6 +146,7 @@ img.avatar {
 
 p{
   text-align: center;
+  font-family: BreeSerif;
 }
 
 /* ---------------------INDEX.HTML-------------------- */
@@ -167,4 +200,8 @@ nav div
   height: 800px;
   box-shadow: -10px 20px 30px #888888;
 }
-}
+
+@font-face {
+    font-family: BreeSerif;
+    src: url(resources/BreeSerif-Regular.ttf);
+  }
