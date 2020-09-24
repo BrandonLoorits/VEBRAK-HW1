@@ -163,8 +163,8 @@ p{
   flex-direction: column;
   left: 100%;
   margin-top: 0;
-  margin-left: 33%;
-  width: 450px;
+  margin-left: 25%;
+  width: 650px;
   height: 100%;
   background: rgb(255, 255, 255);
   border: 8px black
@@ -245,7 +245,7 @@ nav div.search-container > button {
   flex-grow: 1;
   flex-direction: column;
   margin: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 10%;
   box-shadow: -10px 20px 30px #888888;
 }
@@ -254,6 +254,7 @@ div ~ p {
 }
 .bar{
   display: flex;
+  border-radius: 10px;
   height: 20%;
 }
 .vasak{
