@@ -163,7 +163,7 @@ p{
   flex-direction: column;
   left: 100%;
   margin-top: 0;
-  margin-left: 28%;
+  margin-left: 33%;
   width: 450px;
   height: 100%;
   background: rgb(255, 255, 255);
@@ -183,7 +183,11 @@ div{
   display: flex;
 }
 img{
-  height: 70%;
+  height: 100%;
+}
+.blogiFotod{
+  width: 100%;
+  padding-top: 0;
 }
 
 nav div{
