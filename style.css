@@ -18,17 +18,20 @@ h2{
   left: 160px;
   top: 30px;
 }
-  
+body{
+  margin:auto;
+}
+
 .loginBox{
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 40%;
-  left: 50%; 
-  margin-top: -100px; 
-  margin-left: -250px; 
-  width: 450px; 
-  height: 500px; 
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 450px;
+  height: 500px;
   background: rgb(255, 255, 255);
   border: 8px black
 }
@@ -121,7 +124,7 @@ button {
   cursor: pointer;
   width: 100%;
   font-family: BreeSerif;
-  
+
 }
 button:hover {
   opacity: 0.8;
@@ -148,57 +151,126 @@ p{
   text-align: center;
   font-family: BreeSerif;
 }
+.pealkiri{
+  text-align: left;
+  padding-left: 2%
+}
 
 /* ---------------------INDEX.HTML-------------------- */
 
-.feedBox{
+.flex-container{
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 40%;
-  left: 50%; 
-  top: 0;
-  margin-left: -500px; 
-  width: 1000px; 
-  height: 100%; 
+  left: 100%;
+  margin-top: 0;
+  margin-left: 28%;
+  width: 450px;
+  height: 100%;
   background: rgb(255, 255, 255);
   border: 8px black
 }
 
-nav {
+nav{
   display: flex;
+
   background-color: #ffffff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+
+  align-items: center;
+
+
+}
+div{
+  display: flex;
+}
+img{
+  height: 70%;
 }
 
 nav div{
-  height: 60px;
-  flex-grow: 4;
-  padding: 20px;
+
+    height: 30px;
+
+    flex-grow: 4;
+
+    padding: 10px;
+
 }
 
 nav div img {
-  height: 100%;
+
+    height: 100%;
+
 }
 
-nav div
+nav div.search-container > input {
 
-.searchBox{
-  display: flex;
-  width: 450px;
-  align-items: stretch;
-  height: 100%;
+    box-sizing: border-box;
+
+    height: 30px;
+
+    width: 80%;
+
+    margin: 0;
+
+    padding: 5px;
+
+    border: 1px solid #e0e0e0;
+
+}
+
+.search-container{
+  flex-direction: row;
+}
+
+nav div.search-container > button {
+
+  background-color: #0a4194;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  padding: 1px 20px;
+  margin:0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-family: BreeSerif;
+
 }
 
 .infoBox{
   display: flex;
-  width: 700px;
-  align-items: stretch;
-  height: 800px;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 5px;
+  height: 10%;
   box-shadow: -10px 20px 30px #888888;
+}
+div ~ p {
+  text-align: left;
+}
+.bar{
+  display: flex;
+  height: 20%;
+}
+.vasak{
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.parem{
+  padding: 0;
+  padding-bottom: 20px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.paremPilt{
+  flex-direction: column;
+  align-items: flex-end;
+}
+.like{
+  height: 10%;
+  width: 10%;
+  align-items: flex-start;
 }
 
 @font-face {
