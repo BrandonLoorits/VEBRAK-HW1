@@ -1,9 +1,14 @@
-body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(0, 125, 184);}
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  background-color: rgb(0, 125, 184);
+}
+
 form {
   display: flex;
   flex-direction: column;
   border: 3px solid #f1f1f1;
 }
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -13,16 +18,12 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-h2{
-  position: absolute;
-  left: 160px;
-  top: 30px;
-}
-body{
+
+body {
   margin:auto;
 }
 
-.loginBox{
+.loginBox {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -36,23 +37,18 @@ body{
   border: 8px black
 }
 
-.enterData ~ input[type="text"] {
-    font-family: BreeSerif;
-}
-
-.pictureBox{
+#pictureBox {
   display: flex;
   width: 450px;
   align-items: stretch;
 }
 
-.pictureBox > .welcome {
-
+#pictureBox > .welcome {
   margin: 40px;
   align-items: center;
 }
 
-.verticalBox{
+#verticalBox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +64,7 @@ body{
   font-size: 20px;
 }
 
-input ~ .textField {
+.textField {
     font-family: BreeSerif;
 }
 
@@ -83,15 +79,15 @@ input ~ .textField {
   color: blue;
 }
 
-.verticalBox > .account {
+#verticalBox > .account {
   margin:13px;
 }
 
-.verticalBox > .or {
+#verticalBox > .or {
   margin:20px;
 }
 
-.verticalBox > .login {
+#verticalBox > .login {
   margin:13px;
 }
 
@@ -99,7 +95,7 @@ label + .or {
   font-weight: bold;
 }
 
-.enterData{
+#enterData{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,11 +103,11 @@ label + .or {
   width: 450px;
 }
 
-.enterData > .textField {
+#enterData > .textField {
   width: 300px;
 }
 
-.enterData > .passwordField {
+#enterData > .passwordField {
   width: 300px;
 }
 
@@ -126,39 +122,45 @@ button {
   font-family: BreeSerif;
 
 }
+
 button:hover {
   opacity: 0.8;
 }
+
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
 }
+
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
 }
+
 img.avatar {
   width: 40%;
   border-radius: 50%;
 }
+
 .container {
   padding: 16px;
   background-color: white;
 }
 
-p{
+p {
   text-align: center;
   font-family: BreeSerif;
 }
-.pealkiri{
+
+.pealkiri {
   text-align: left;
   padding-left: 2%
 }
 
 /* ---------------------INDEX.HTML-------------------- */
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
   left: 100%;
@@ -170,64 +172,49 @@ p{
   border: 8px black
 }
 
-nav{
+nav {
   display: flex;
-
   background-color: #ffffff;
-
   align-items: center;
-
-
 }
-div{
+
+div {
   display: flex;
 }
-img{
+
+img {
   height: 100%;
 }
-.blogiFotod{
+
+.blogiFotod {
   width: 100%;
   padding-top: 0;
 }
 
-nav div{
-
-    height: 30px;
-
-    flex-grow: 4;
-
-    padding: 10px;
-
+nav div {
+  height: 30px;
+  flex-grow: 4;
+  padding: 10px;
 }
 
 nav div img {
-
-    height: 100%;
-
+  height: 100%;
 }
 
 nav div.search-container > input {
-
-    box-sizing: border-box;
-
-    height: 30px;
-
-    width: 80%;
-
-    margin: 0;
-
-    padding: 5px;
-
-    border: 1px solid #e0e0e0;
-
+  box-sizing: border-box;
+  height: 30px;
+  width: 80%;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
 }
 
-.search-container{
+.search-container {
   flex-direction: row;
 }
 
 nav div.search-container > button {
-
   background-color: #0a4194;
   border-radius: 0px 5px 5px 0px;
   color: white;
@@ -237,10 +224,9 @@ nav div.search-container > button {
   cursor: pointer;
   width: 30%;
   font-family: BreeSerif;
-
 }
 
-.infoBox{
+.infoBox {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -249,29 +235,38 @@ nav div.search-container > button {
   height: 10%;
   box-shadow: -10px 20px 30px #888888;
 }
+
+p::first-letter {
+  color: #0a4194;
+}
+
 div ~ p {
   text-align: left;
 }
-.bar{
+
+.bar {
   display: flex;
   border-radius: 10px;
   height: 20%;
 }
-.vasak{
+
+.vasak {
   align-items: flex-start;
   flex-direction: column;
-
 }
-.parem{
+
+.parem {
   padding: 0;
   padding-bottom: 20px;
   align-items: flex-end;
   flex-direction: column;
 }
+
 .paremPilt{
   flex-direction: column;
   align-items: flex-end;
 }
+
 .like{
   height: 10%;
   width: 10%;
@@ -279,6 +274,6 @@ div ~ p {
 }
 
 @font-face {
-    font-family: BreeSerif;
-    src: url(resources/BreeSerif-Regular.ttf);
-  }
+  font-family: BreeSerif;
+  src: url(resources/BreeSerif-Regular.ttf);
+}
