@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 125, 184);
 }
 
@@ -9,7 +9,7 @@ form {
   border: 3px solid #f1f1f1;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password] {/*attribute selector*/
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -43,7 +43,7 @@ body {
   align-items: stretch;
 }
 
-#pictureBox > .welcome {
+#pictureBox > .welcome {/*child combinator*/
   margin: 40px;
   align-items: center;
 }
@@ -91,11 +91,11 @@ body {
   margin:13px;
 }
 
-label + .or {
+label + .or {/*Adjacent sibling combinator*/
   font-weight: bold;
 }
 
-#enterData{
+#enterData{/*ID selector*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +123,7 @@ button {
 
 }
 
-button:hover {
+button:hover {/*pseudoclass*/
   opacity: 0.8;
 }
 
@@ -178,7 +178,7 @@ nav {
   align-items: center;
 }
 
-div {
+div {/*type Selector*/
   display: flex;
 }
 
@@ -191,7 +191,7 @@ img {
   padding-top: 0;
 }
 
-nav div {
+nav div {/*Descendant Selector*/
   height: 30px;
   flex-grow: 4;
   padding: 10px;
@@ -201,7 +201,7 @@ nav div img {
   height: 100%;
 }
 
-nav div.search-container > input {
+nav div.search-container > input {/*child combinator and class selector*/
   box-sizing: border-box;
   height: 30px;
   width: 80%;
@@ -210,7 +210,7 @@ nav div.search-container > input {
   border: 1px solid #e0e0e0;
 }
 
-.search-container {
+.search-container {/*class Selector*/
   flex-direction: row;
 }
 
@@ -236,11 +236,11 @@ nav div.search-container > button {
   box-shadow: -10px 20px 30px #888888;
 }
 
-p::first-letter {
+p::first-letter {/*Pseudo-element*/
   color: #0a4194;
 }
 
-div ~ p {
+div ~ p {/*General Sibling Selector*/
   text-align: left;
 }
 
